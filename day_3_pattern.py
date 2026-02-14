@@ -13,7 +13,10 @@ problem Statement: Print this pattern
 
 def number_pattern(n):
     for row in range(1,n+1):
-        for col in range(row,n+1):
-            print(row, end=" ")
+        for col in range(1,row+1):
+            print(col, end="")
         print()
-print(number_pattern(5))
+
+n = int(input("Enter the number to draw pattern"))
+
+number_pattern(n)
